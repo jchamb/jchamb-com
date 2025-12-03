@@ -1,0 +1,5 @@
+# robots.txt for jchamb
+# Allow all crawlers to access the site. Adjust Disallow rules if needed.
+
+User-agent: *
+Allow: /

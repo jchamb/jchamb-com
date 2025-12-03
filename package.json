@@ -1,0 +1,23 @@
+{
+  "name": "jchamb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "license": "WTFPL",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.16.1",
+    "typescript": "~5.9.3",
+    "vite": "npm:rolldown-vite@^7.2.10",
+    "wrangler": "^4.52.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

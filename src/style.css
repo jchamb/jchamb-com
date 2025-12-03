@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+:root {
+  --shadow-color: #007675;
+}
+
+body {
+  background: oklch(33.424% 0.10877 299.989);
+  background: linear-gradient(120deg, oklch(33.424% 0.10877 299.989) 0%, oklch(73.784% 0.16569 160.483) 100%);
+  color: #d8dfe4;
+  /* text-shadow: 1px 1px 1px #517b6b; */
+}
+
+p {
+  margin-bottom: calc(var(--spacing) * 5);
+}
+
+#bg {
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  color: oklch(0.66 0.15 148.92);
+  filter: drop-shadow(-3vmin -1vmin 0 oklch(0.66 0.15 148.92)) drop-shadow(-24vmin 0.85vmin 0 oklch(0.66 0.15 148.92))
+    drop-shadow(-12vmin 1.85vmin 0 oklch(0.66 0.15 148.92)) drop-shadow(-1vmin 3.5vmin 0 oklch(0.66 0.15 148.92))
+    drop-shadow(6vmin 7vmin 0 oklch(0.66 0.15 148.92)) drop-shadow(-6vmin 14vmin 0 oklch(0.66 0.15 148.92))
+    drop-shadow(3vmin 28vmin 0 oklch(65.054% 0.14477 149.174)) drop-shadow(3vmin 56vmin 0 oklch(0.66 0.15 148.92))
+    blur(1px);
+  /* opacity: 0.75; */
+}
+
+.title {
+  color: #fff;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.title {
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 6px 6px var(--shadow-color);
+}
+
+.grid-point {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  position: absolute;
+  transition: none;
+}
+
+.chat-heading:before {
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  content: '';
+  display: block;
+  border-radius: 2px;
+  box-shadow: 4px 2px var(--shadow-color);
+  position: relative;
+  top: -6px;
+}
+
+.button {
+  @apply py-1 px-2 rounded-sm text-white;
+  background-color: oklch(0.67 0.15 199.07);
+  box-shadow: 6px 6px #007675;
+}
+
+.button:hover {
+  background-color: oklch(73.784% 0.16569 160.483);
+  box-shadow: 6px 6px #07535e;
+}
